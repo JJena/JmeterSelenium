@@ -30,7 +30,11 @@ public class SeleniumUITest {
         //System.setProperty("webdriver.chrome.driver", "chromedriver-mac-arm64-latest/chromedriver");
 
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless=new");
+        options.addArguments("--headless");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--verbose");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--disable-gpu");
 
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
