@@ -49,6 +49,14 @@
              <artifactId>selenium-manager</artifactId>
              <version>${selenium.version}</version>
          </dependency>
+
+         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-os -->
+         <dependency>
+             <groupId>org.seleniumhq.selenium</groupId>
+             <artifactId>selenium-os</artifactId>
+             <version>${selenium.version}</version>
+         </dependency>
+    
      
 
         <dependency>
